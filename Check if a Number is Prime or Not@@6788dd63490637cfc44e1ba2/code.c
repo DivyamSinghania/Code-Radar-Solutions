@@ -10,10 +10,10 @@ int main() {
     else {
         for(int i=2;i<x;i++){
             if (x%i==0){
-                ans= "Prime";
+                ans= "Not Prime";
             }
             else{
-                ans= "Not Prime";
+                ans= "Prime";
             }
         }
         printf("%s",ans);
