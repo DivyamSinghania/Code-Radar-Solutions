@@ -10,13 +10,18 @@ int main() {
     else {
         for(int i=2;i<x;i++){
             if (x%i==0){
-                ans= "Not Prime";
+                ans= 0;
             }
             else{
-                ans= "Prime";
+                ans= 1;
             }
         }
-        printf("%s",ans);
+        if(ans==1){
+            printf("Prime");
+        }
+        else{
+            printf("Not Prime");
+        }
     }
     return 0;
 }
