@@ -1,14 +1,15 @@
 #include <stdio.h>
 
 int main() {
-    int x,y,a;
+    int x,y,a,b;
     scanf("%d %d",&x,&y);
     a=x>>y;
-    if(a==0){
-        printf("0");
+    b=1
+    if((a|b)>a){
+        printf("1");
     }
     else{
-        printf("1");
+        printf("0");
     }
     return 0;
 }
