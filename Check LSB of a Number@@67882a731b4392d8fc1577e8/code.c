@@ -1,15 +1,13 @@
 #include <stdio.h>
 
 int main() {
-    int x,y,a;
+    int x;
     scanf("%d",&x);
-    y=1;
-    a=x|y;
-    if(a>x){
-        printf("Not Set");
+    if(x & 1){
+        printf("Set");
     }
     else{
-        printf("Set");
+        printf("Not Set");
     }
     return 0;
 }
