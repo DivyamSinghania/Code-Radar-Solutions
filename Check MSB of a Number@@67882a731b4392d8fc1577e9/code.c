@@ -2,10 +2,9 @@
 
 
 int main() {
-    int x,a;
+    int x;
     scanf("%d",&x);
-    a=x>>31;
-    if(a==0){
+    if((x>>31) == 0){
         printf("Not Set");
     }
     else{
