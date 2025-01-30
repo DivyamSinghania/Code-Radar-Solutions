@@ -1,11 +1,10 @@
 #include <stdio.h>
 
 int main() {
-    int x,y,a;
+    int x,y;
     scanf("%d %d",&x,&y);
-    a=1<<y;
-    if((x|a)==x){
-        printf("%d",(x^a));
+    if(x & (1<<y)){
+        printf("%d",(x^(1<<y)));
     }
     else{
         printf("%d",x);
