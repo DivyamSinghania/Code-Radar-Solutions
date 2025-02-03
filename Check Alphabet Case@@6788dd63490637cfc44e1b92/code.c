@@ -3,8 +3,8 @@
 int main() {
     char a;
     scanf("%c",&a);
-    if(isalpha(a)){
-        if(isupper(a)){
+    if(isalpha(a)==1){
+        if(isupper(a)==1){
             printf("Uppercase");
         }
         else{
