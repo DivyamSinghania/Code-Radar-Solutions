@@ -10,6 +10,6 @@ int main() {
         else{printf("Consonent");}
     }
     else if(isdigit(x)){printf("Digit");}
-    else(printf("Special Character");)
+    else{printf("Special Character");}
     return 0;
 }
