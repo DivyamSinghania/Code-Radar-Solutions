@@ -5,8 +5,8 @@ int main() {
     char x,a;
     scanf("%c",&x);
     if(isaplha(x)){
-        // a= tolower(x);
-        if(x=="a" || x=="e" || x=="i" || x=="o" || x=="u"){printf("Vowel");}
+        a= tolower(x);
+        if(a=='a' || a=='e' || a=='i' || a=='o' || a=='u'){printf("Vowel");}
         else{printf("Consonent");}
     }
     else if(isdigit(x)){printf("Digit");}
