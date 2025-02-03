@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int x;
-    int ans;
+    int x,ans;
     scanf("%d",&x);
     if(x==2){
         printf("Prime");
