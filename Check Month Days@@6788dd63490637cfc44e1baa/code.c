@@ -8,9 +8,10 @@ int main() {
         else if (x%2==0){printf("30");}
         else{printf("31");}
     }
-    else{
+    else if (x<=12){
         if (x%2==0){printf("31");}
         else{printf("30");}
     }
+    else{printf("Invalid month");}
     return 0;
 }
