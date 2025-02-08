@@ -6,15 +6,20 @@ int main() {
     scanf("%d %d %c",&x,&y,&z);
     switch (z){
         case '+':
-        printf("%f",(x+y));
+        printf("%d",(x+y));
+        break;
         case '-':
-        printf("%f",(x-y));
+        printf("%d",(x-y));
+        break;
         case '*':
-        printf("%f",(x*y));
+        printf("%d",(x*y));
+        break;
         case '/':
-        printf("%f",(x/y));
+        printf("%d",(x/y));
+        break;
         default:
         printf("error");
+        break;
     }
     return 0;
 }
