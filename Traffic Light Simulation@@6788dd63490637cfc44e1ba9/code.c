@@ -6,16 +6,16 @@ int main() {
     switch(x){
         case 'R':
         printf("Stop");
-        break
+        break;
         case 'G':
         printf("Go");
-        break
+        break;
         case 'Y':
         printf("Slow Down");
-        break
+        break;
         default:
         printf("Invalid input");
-        break
+        break;
     }
     return 0;
 }
