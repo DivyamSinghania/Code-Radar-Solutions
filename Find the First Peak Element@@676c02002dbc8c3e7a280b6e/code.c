@@ -3,7 +3,7 @@
 int main() {
     int x,a=0;
     scanf("%d",&x);
-    int arr[i];
+    int arr[x];
     for(int i=0;i<x;i++){scanf("%d",&arr[i]);}
     if(arr[0]>arr[1]){printf("%d",arr[0]);}
     else{
