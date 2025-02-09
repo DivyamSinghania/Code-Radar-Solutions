@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int isPrime(int num){
-    int x;
+    int x=1;
     if(num<2){x=0;}
     else if(num==2){x=1;}
     else{
