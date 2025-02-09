@@ -1,9 +1,10 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
     int x,y;
     scanf("%d",&x);
-    int arr[x];
+    int *arr = (int *)malloc(x * sizeof(int)); 
     for(int i=0;i<x;i++){
         scanf("%d",&arr[i]);
     }
