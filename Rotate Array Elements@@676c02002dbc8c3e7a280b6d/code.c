@@ -10,8 +10,8 @@ int main() {
     scanf("%d",&y);
     for(int j=0;j<y;j++){
         int a = arr[x-1];
-            for (int j=x-1;j>0;j++) {
-                arr[j]=arr[j-1];
+            for (int k=x-1;k>0;k++) {
+                arr[k]=arr[k-1];
             }
             arr[0]=a;
     }
