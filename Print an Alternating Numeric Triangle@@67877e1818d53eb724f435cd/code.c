@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() {
+int main(){
     int x;
     scanf("%d",&x);
     for(int i=1;i<=x;i++){
@@ -14,6 +14,7 @@ int main() {
                 else{printf("1 ");}
             }
         printf("\n");
+        }
     }
     return 0;
 }
