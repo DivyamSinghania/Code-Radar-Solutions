@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int x,y=1,a=1;
+    int x,y=0,a=1;
     scanf("%d",&x);
     int arr[x];
     for(int i=0;i<x;i++){scanf("%d",&arr[i]);}
@@ -18,6 +18,7 @@ int main() {
             if(arr[x-1]>arr[x-2]){
                 printf("%d",arr[x-1]);
                 y=0;}
+            else{y=-1;}
         }
         if(y==1){printf("-1");}
     }
