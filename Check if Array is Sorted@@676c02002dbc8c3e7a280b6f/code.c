@@ -8,7 +8,7 @@ int main() {
         scanf("%d",&arr[i]);
     }
     for(int i=0;i<x-1;i++){
-        int *a="Sorted";
+        char *a="Sorted";
         if(arr[i]>arr[i+1]){
             a="Not Sorted";
             break;
