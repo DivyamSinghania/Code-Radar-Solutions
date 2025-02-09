@@ -18,7 +18,7 @@ int main() {
             if(arr[x-1]>arr[x-2]){
                 printf("%d",arr[x-1]);
                 y=0;}
-            else{y=-1;}
+            else{y=1;}
         }
         if(y==1){printf("-1");}
     }
