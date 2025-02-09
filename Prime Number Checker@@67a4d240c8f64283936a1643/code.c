@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int isPrime(int num){
+int isPrime(num){
     int x;
     if(num==2){x=1;}
     else{
