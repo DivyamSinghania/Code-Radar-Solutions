@@ -8,12 +8,13 @@ int main() {
         scanf("%d",&arr[i]);
     }
     for(int i=0;i<x-1;i++){
-        char *a="Sorted";
+        int a=1;
         if(arr[i]>arr[i+1]){
-            a="Not Sorted";
+            a=0;
             break;
         }
     }
-    printf("%s",a);
+    if(a==1){printf("Sorted");}
+    else{printf("Not Sorted");}
     return 0;
 }
