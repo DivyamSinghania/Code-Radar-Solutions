@@ -1,5 +1,16 @@
 #include <stdio.h>
 
+int main() {
+    int t;
+    scanf("%d",&t);
+    while(t--){
+        int num;
+        scanf("%d",&num);
+        printf("%d\n",isPrime(num));
+    }
+    return 0;
+}
+
 int isPrime(int num){
     int x=1;
     if(num<2){x=0;}
@@ -13,15 +24,4 @@ int isPrime(int num){
         }
     }
     return x;
-}
-
-int main() {
-    int t;
-    scanf("%d",&t);
-    while(t--){
-        int num;
-        scanf("%d",&num);
-        printf("%d\n",isPrime(num));
-    }
-    return 0;
 }
