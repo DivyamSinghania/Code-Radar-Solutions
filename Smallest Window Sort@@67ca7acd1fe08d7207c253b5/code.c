@@ -2,10 +2,10 @@
 #include <stdlib.h>
 
 int findUnsortedSubarray(int arr[],int n){
-    int ans;
+    // int ans;
     for(int i=0;i<n-1;i++){
             if (arr[i]<arr[i+1]){
-                ans= n-1-i;
+                int ans= n-1-i;
                 break;
             }
         }
