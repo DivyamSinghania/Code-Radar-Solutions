@@ -8,6 +8,5 @@ int findUnsortedSubarray(int arr[],int n){
                 c++;
             }
         }
-    printf("%d",c);
-    return 0;
+    return c;
 }
