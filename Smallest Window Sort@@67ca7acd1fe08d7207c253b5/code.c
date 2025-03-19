@@ -2,9 +2,11 @@
 #include <stdlib.h>
 
 int subarray(int arr[],int n){
+    int ans;
     for(int i=0;i<n-1;i++){
             if (arr[i]<arr[i+1]){
-                int ans= n-1-i;
+                ans= n-1-i;
+                break;
             }
         }
     printf("%d",ans);
