@@ -13,6 +13,7 @@ int main (){
         if (max<arr[i])
             max=arr[i];
     }
+    printf("%d",max);
     for(int i=1;i<=max;i++){
         for(int j=0;j<n;j++){
             if(i==arr[j]){
