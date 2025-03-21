@@ -13,6 +13,7 @@ int main (){
         if (arr[i]>0)
             sum+=arr[i];
     }
+    printf("%d",sum);
     int max=arr[0];
     for (int i=0;i<n;i++){
         if (max<arr[i])
