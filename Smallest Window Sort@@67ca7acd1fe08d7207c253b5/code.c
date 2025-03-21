@@ -12,10 +12,11 @@ int findUnsortedSubarray(int arr[], int n) {
     for(int i=0;i<n-1;i++){
         for(int j=i;j<n-2;j++){
             if(arr[i]>arr[j]){
-            start=i;
-            break;
+                start=i;
+                break;
             }
         }
+        if(start!=-1){break;}
     }
     if (start==-1){
         return 0;
