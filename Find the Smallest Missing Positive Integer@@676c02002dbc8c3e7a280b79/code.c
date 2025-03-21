@@ -25,7 +25,7 @@ int main (){
                 small=1;
             }
             printf("%d",small);
-            printf("%d",i);
+            printf("%d\n",i);
         }
         if(small==1)
             printf("%d",i);
