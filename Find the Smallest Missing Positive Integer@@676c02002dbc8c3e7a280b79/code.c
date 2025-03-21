@@ -13,7 +13,6 @@ int main (){
         if (arr[i]>0)
             sum+=arr[i];
     }
-    printf("%d \n",sum);
     int max=arr[0];
     for (int i=0;i<n;i++){
         if (max<arr[i])
@@ -21,7 +20,7 @@ int main (){
     }
     for(int i=1;i<=max;i++)
         count+=i;
-    printf("%d \n",count);
-    if(count==sum){printf("%d",(max+1));}
+    if(sum==0){printf("1")}
+    else if(count==sum){printf("%d",(max+1));}
     else{printf("%d",(count-sum));}
 }
