@@ -1,6 +1,5 @@
 // Your code here...
 #include <stdio.h>
-#include <limit.h>
 
 int main (){
     int n,arr[10000];
