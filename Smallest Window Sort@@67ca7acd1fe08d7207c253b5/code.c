@@ -3,10 +3,16 @@
 
 int findUnsortedSubarray(int arr[], int n) {
     int start=-1,end=-1;
-    for (int i = 0; i < n - 1; i++) {
-        if (arr[i] > arr[i + 1]) {
-            start = i;
-            break;
+    // for (int i = 0; i < n - 1; i++) {
+    //     if (arr[i] > arr[i + 1]) {
+    //         start = i;
+    //         break;
+    //     }
+    // }
+    for(int i=0;i<n-2;i++){
+        for(int j=i+1;j<n-1;j++){
+            if(arr[i]<arr[j])
+            start=i;
         }
     }
     if (start==-1){
