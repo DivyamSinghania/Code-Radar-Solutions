@@ -16,7 +16,7 @@ int main (){
     printf("%d \n",max);
     for(int i=1;i<=max;i++){
         int small;
-        for(int j=0;j<=n;j++){
+        for(int j=0;j<n-1;j++){
             if(i==arr[j]){
                 small=0;
                 break;
