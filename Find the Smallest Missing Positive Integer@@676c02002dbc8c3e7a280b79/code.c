@@ -15,10 +15,13 @@ int main (){
     }
     for(int i=1;i<=max;i++){
         for(int j=0;j<n;j++){
-            if(i==arr[j])
+            if(i==arr[j]){
                 small=0;
                 break;
-            else{small=1;}
+            }
+            else{
+                small=1;
+            }
         }
         if(small==1)
             printf("%d",i);
