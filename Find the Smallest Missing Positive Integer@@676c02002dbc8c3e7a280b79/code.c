@@ -25,7 +25,4 @@ int main (){
             break;
     }
 
-    if(sum==0){printf("1");}
-    else if(count==sum){printf("%d",(max+1));}
-    else{printf("%d",(count-sum));}
 }
