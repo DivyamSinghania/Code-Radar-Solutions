@@ -20,7 +20,7 @@ int main (){
     }
     for(int i=1;i<=max;i++)
         count+=i;
-    if(sum==0){printf("1")}
+    if(sum==0){printf("1");}
     else if(count==sum){printf("%d",(max+1));}
     else{printf("%d",(count-sum));}
 }
