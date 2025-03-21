@@ -22,5 +22,6 @@ int main (){
     for(int i=1;i<=max;i++)
         count+=i;
     printf("%d \n",count);
-    printf("%d",(count-sum));
+    if(count==sum){printf("%d",(max+1));}
+    else{printf("%d",(count-sum));}
 }
