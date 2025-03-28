@@ -23,12 +23,15 @@ int main(){
                     freq[j]=0;
                 }
             }
+            if(freq[i]!=0){
+                freq[i]=count;
+            }
+        }
+        for(int i=0;i<n;i++){
             if(freq[i]>=(n/2)){
                 printf("%d",arr[i]);
             }
         }
     }
-    for(int i=0;i<n;i++){
-        printf("%d ",arr[i]);
-    }
+
 }
