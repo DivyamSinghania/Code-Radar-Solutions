@@ -27,8 +27,8 @@ int main(){
                 freq[i]=count;
             }
         }
+        int k=0;
         for(int i=0;i<n;i++){
-            int k=0;
             if(freq[i]>(n/2)){
                 k=0;
                 printf("%d",arr[i]);
