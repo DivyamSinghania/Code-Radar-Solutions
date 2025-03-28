@@ -11,15 +11,17 @@ int main(){
     if(n<=1){
         printf("-1");
     }
-    int max=arr[0];
-    int sec=arr[1];
-    for(int i=1;i<n;i++){
-        if(max<arr[i]){
-            sec=max;
-            max=arr[i];
+    else{
+        int max=arr[0];
+        int sec=arr[1];
+        for(int i=1;i<n;i++){
+            if(max<arr[i]){
+                sec=max;
+                max=arr[i];
+            }
         }
+        if(sec==max){printf("-1");}
+        else
+            printf("%d",sec);
     }
-    if(sec==max){printf("-1");}
-    else
-        printf("%d",sec);
 }
