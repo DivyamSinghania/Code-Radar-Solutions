@@ -28,10 +28,15 @@ int main(){
             }
         }
         for(int i=0;i<n;i++){
-            if(freq[i]>=(n/2)){
+            int k=0;
+            if(freq[i]>(n/2)){
+                k=0;
                 printf("%d",arr[i]);
+                break;
             }
+            else{k=-1;}
         }
+        if(k==-1){printf("-1");}
     }
 
 }
