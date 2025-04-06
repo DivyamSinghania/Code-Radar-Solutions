@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main(){
-    int n;
+    int n,ans;
     scanf("%d",&n);
     int arr[n];
     for(int i=0;i<n;i++){
@@ -19,8 +19,10 @@ int main(){
     }
     for(int i=0;i<n-1;i++){
         int next=arr[i]+1;
-        if(next!=arr[i+1])
+        if(next!=arr[i+1]){
+            ans=next;
             break;
+        }
     }
-    printf("%d",next);
+    printf("%d",ans);
 }
