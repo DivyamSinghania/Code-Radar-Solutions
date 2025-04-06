@@ -17,6 +17,7 @@ int main(){
             }
         }
     }
+    ans=arr[n-1];
     for(int i=0;i<n-1;i++){
         int next=arr[i]+1;
         if(next!=arr[i+1]){
