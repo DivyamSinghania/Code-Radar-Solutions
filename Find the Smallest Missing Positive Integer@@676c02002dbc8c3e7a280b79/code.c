@@ -1,35 +1,26 @@
-// Your code here...
 #include <stdio.h>
+#include <stdlib.h>
 
-int main (){
-    int n,arr[10000];
+int main(){
+    int n;
     scanf("%d",&n);
-    for (int i=0;i<n;i++){
+    int arr[n];
+    for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-
-    int max=arr[0];
-    for (int i=0;i<n;i++){
-        if (max<arr[i])
-            max=arr[i];
-    }
-    printf("%d \n",max);
-    for(int i=1;i<=max;i++){
-        int small;
-        for(int j=0;j<n-1;j++){
-            if(i==arr[j]){
-                small=0;
-                break;
+    for(int i=0;i<n-1;i++){
+        for(int j=i+1;j<n;j++){
+            if(arr[j]<arr[i]){
+                arr[j]=arr[j]^arr[i];
+                arr[i]=arr[j]^arr[i];
+                arr[j]=arr[j]^arr[i];
             }
-            else{
-                small=1;
-            }
-            printf("%d",small);
-            printf("%d\n",i);
         }
-        if(small==1)
-            printf("%d",i);
+    }
+    for(int i=0;i<n-1;i++){
+        int next=arr[i]+1;
+        if(next!=arr[i+1])
             break;
     }
-
+    printf("%d",next);
 }
